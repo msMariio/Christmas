@@ -520,6 +520,19 @@ section img{
   -webkit-box-shadow: 3px 0px 40px 25px rgba(0,0,0,0.75);
   -moz-box-shadow: 3px 0px 40px 25px rgba(0,0,0,0.75);
   box-shadow: 3px 0px 40px 25px rgba(255, 255, 255, 0.75);
+  animation-name: bajar;
+  animation-timing-function:ease-in-out;
+  animation-duration:1.3s;
+}
+
+@keyframes bajar{
+  0%{
+    width: 100%;
+    margin: -10% auto;
+  }
+  100%{
+    width: 600px;
+  }
 }
 
 
