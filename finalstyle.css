@@ -395,7 +395,7 @@ body {
   margin: 0 auto;
   left: 0;
   right: 0;
-  margin-top: 70%;
+  margin-top: 280px;
   border-radius: 10px;
   animation-name:abrir;
   animation-timing-function:ease-in-out;
@@ -462,13 +462,13 @@ section img{
 
 .contenedor {
   position: relative;
-  width: 400px;
+  width: 100%;
   height: 400px;
   margin: 0 auto;
   animation-name: aparicion;
   animation-timing-function:ease-in-out;
   animation-duration:1.3s;
-  
+ 
 }
 .texto {
   width: 220px;
@@ -506,32 +506,47 @@ section img{
 
 .nombre{
   text-align: center;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  width: 600px;
+  width: 370px;
   position: absolute;
-  font-size: 40px;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  font-family: 'Sacramento';
-  font-weight: bold;
-  color: #fafafa;
-  -webkit-box-shadow: 3px 0px 40px 25px rgba(0,0,0,0.75);
-  -moz-box-shadow: 3px 0px 40px 25px rgba(0,0,0,0.75);
-  box-shadow: 3px 0px 40px 25px rgba(255, 255, 255, 0.75);
-  animation-name: bajar;
+
+  margin-top: 360px;
+  margin-left: 70%;
+  
+  animation-name: entrar;
   animation-timing-function:ease-in-out;
+  animation-duration:2.5s;
+
+}
+.nombre2{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Sacramento';
+  color: #fafafa;
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
+  animation-name: sombra;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count:infinite;
   animation-duration:1.3s;
 }
 
-@keyframes bajar{
+@keyframes entrar{
   0%{
-    width: 100%;
-    margin: -10% auto;
+    
+    margin-left: 0%;
   }
   100%{
-    width: 600px;
+    margin-left: 70%;
+  }
+}
+@keyframes sombra{
+  0%{
+    text-shadow: 0px 0px 0px rgba(255, 255, 255, 1);
+  }
+  50%{
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 1);
+  }
+  100%{
+    text-shadow: 0px 0px 0px rgba(255, 255, 255, 1);
   }
 }
 
