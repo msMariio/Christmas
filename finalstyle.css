@@ -34,6 +34,15 @@
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
+  animation-name: rotar;
+  animation-duration: 3s;
+  animation-timing-function:ease-in-out;
+ 
+}
+
+@keyframes rotar{
+  50%{transform: rotateY(180deg)}
+  
 }
 
 .tag-container:hover .tag {
@@ -397,16 +406,37 @@ body {
   right: 0;
   margin-top: 280px;
   border-radius: 10px;
-  animation-name:abrir;
-  animation-timing-function:ease-in-out;
-  animation-duration:2.5s;
+  animation:abrir ease-in-out 2.5s;
   height: 100px;
+  animation:parpadeo ease-in-out infinite 2s;
+}
+
+@keyframes parpadeo{
+  0%{
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 88, 88, 0.75);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(255, 88, 88, 0.75);
+    box-shadow: 0px 0px 0px 0px rgba(255, 88, 88, 0.75);
+  }
+  50%{
+    -webkit-box-shadow: 3px 0px 20px 5px rgba(255, 88, 88, 0.75);
+    -moz-box-shadow: 3px 0px 20px 5px rgba(255, 82, 82, 0.75);
+    box-shadow: 3px 0px 20px 5px rgba(255, 88, 88, 0.75);
+  }
+  100%{
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 88, 88, 0.75);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(255, 88, 88, 0.75);
+    box-shadow: 0px 0px 0px 0px rgba(255, 88, 88, 0.75);
+  }
 }
 
 .boton:hover{
-  -webkit-box-shadow: 3px 0px 40px 25px rgba(0,0,0,0.75);
-  -moz-box-shadow: 3px 0px 40px 25px rgba(0,0,0,0.75);
-  box-shadow: 3px 0px 40px 25px rgba(0,0,0,0.75);
+  background: linear-gradient(to bottom, rgb(253, 99, 99), rgb(59, 0, 0));
+}
+
+@keyframes texto{
+  100%{
+    box-shadow: 3px 0px 20px 5px rgba(138, 0, 0, 0.75);
+  }
 }
 
 @keyframes abrir{
