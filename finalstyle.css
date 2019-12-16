@@ -334,8 +334,8 @@
 /*Nieve*/
 
 .nieve {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: url("snow.png"), url("snow3.png"), url("snow2.png");
   animation: snow 20s linear infinite;
 }
@@ -580,6 +580,89 @@ section img{
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .nieve {
+    width: 150vw;
+    height: 100vh;
+  }
+  .nombre{
+    margin-left: 37%;
+    margin-top: 380px;
+  }
+  @keyframes entrar{
+    0%{
+      
+      margin-left: 0%;
+    }
+    100%{
+      margin-left: 37%;
+    }
+  }
+  
+}
 
+@media (min-width: 600px) and (max-width: 1024px) {
+  .nieve {
+    width: 100vw;
+    height: 150vh;
+  }
+  .nombre{
+    margin-left: 27%;
+    margin-top: 380px;
+  }
+  @keyframes entrar{
+    0%{
+      
+      margin-left: 0%;
+    }
+    100%{
+      margin-left: 27%;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .nieve {
+    width: 150vw;
+    height: 150vh;
+  }
+  .nombre{
+    margin-left: 18%;
+    margin-top: 380px;
+  }
+  @keyframes entrar{
+    0%{
+      
+      margin-left: 0%;
+    }
+    100%{
+      margin-left: 18%;
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  .nieve {
+    width: 110vw;
+    height: 150vh;
+  }
+  .nombre{
+    margin-left: 27%;
+    margin-top: 380px;
+  }
+  @keyframes entrar{
+    0%{
+      
+      margin-left: 0%;
+    }
+    100%{
+      margin-left: 27%;
+    }
+  }
+  
+}
 
 
